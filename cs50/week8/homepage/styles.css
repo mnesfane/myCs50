@@ -1,0 +1,94 @@
+body{
+    color: #171a20;
+    font-family: 'M PLUS 1', sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 20px;
+}
+
+/* header a{
+    color: inherit;
+} */
+
+section{
+    height : 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+section .content1{
+    width: 100%;
+    height: 100vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    text-align: center;
+}
+section .button{
+    /* background-color: #eee; */
+    /* padding: 6px 25px; */
+    /* color: inherit; */
+    /* border-radius: 25px */
+        background-color: black; /* Set the background color */
+        color: #eee; /* Set the text color */
+        padding: 12px 24px; /* Set the padding */
+        font-size: 16px; /* Set the font size */
+        border: none; /* Remove the border */
+        border-radius: 25px; /* Set the border radius */
+        cursor: pointer; /* Set the cursor to a pointer on hover */
+        text-decoration: none;
+}
+
+.page{
+    clip-path: polygon(83% 0, 100% 0, 100% 100%, 51% 100%);
+    float: right;
+    height : 100vh;
+    max-width: 100%;
+    /* height: auto; */
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    top: 120%;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.parag{
+    position: absolute;
+    top: 128%;
+    padding-left: 40px;
+}
+
+.stats{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+}
+
+.stats div{
+
+    margin: 0 30px;
+}
+
+.video{
+    width: 100%;
+    height: auto;
+}

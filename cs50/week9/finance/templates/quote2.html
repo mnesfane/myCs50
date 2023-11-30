@@ -1,0 +1,12 @@
+{% extends "layout.html"%}
+
+{% block title %}
+    Quote2
+{% endblock %}
+
+{% block quote2%}
+    <body class="background" style="background-image: url('https://img.freepik.com/premium-photo/business-stock-market-digital-data-financial-investment_24070-1624.jpg?w=2000');"></body>
+    {% if Data %}
+        <h3 class="quote_text" > A share of {{ Data.name }} ({{Data.symbol}}) costs {{usd(Data.price)}}$ </h3>
+    {% endif %}
+{% endblock%}

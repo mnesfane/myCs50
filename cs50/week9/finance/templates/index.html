@@ -1,0 +1,84 @@
+{% extends "layout.html"%}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block index %}
+    <!-- <div class="section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>LFMADLA;LF</td>
+                    <td>LFMADLA;LF</td>
+                    <td>LFMADLA;LF</td>
+                    <td>LFMADLA;LF</td>
+                    <td>LFMADLA;LF</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+    <!-- <div class="table-box">
+        <div class="table-row">
+            <div class="table-cell">
+                <p>Symbol</p>
+            </div>
+            <div class="table-cell">
+                <p>Name</p>
+            </div>
+            <div class="table-cell">
+                <p>Shares</p>
+            </div>
+            <div class="table-cell">
+                <p>Price</p>
+            </div>
+            <div class="table-cell">
+                <p>TOTAL</p>
+            </div>
+        </div>
+
+    </div> -->
+    <body class="background" style="background-image: url('https://img.freepik.com/premium-photo/business-stock-market-digital-data-financial-investment_24070-1624.jpg?w=2000')"></body>
+    <table class="table table-stiped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in sdata %}
+            <tr>
+                <td>{{stock.symbol}}</td>
+                <td>{{stock.name}}</td>
+                <td>{{stock.totalshares}}</td>
+                <td>{{usd(stock.price)}}</td>
+                <td>{{usd(stock.price * stock.totalshares)}}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td colspan="3"></td>
+                <td><strong>CASH</td>
+                <td><strong>{{usd(cash)}}</td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td><strong>TOTAL</td>
+                <td><strong>{{usd(total)}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+    {% endblock%}

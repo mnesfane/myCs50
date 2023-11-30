@@ -1,0 +1,21 @@
+{% extends "layout.html"%}
+{% block title %}
+    Register
+{% endblock %}
+
+{% block register %}
+<body class="background" style="background-image: url('https://rare-gallery.com/uploads/posts/568651-blur-business.jpg');"></body>
+<form action="/register" method="post">
+    <div class="mb-3">
+        <input type="text" autofocus class="form-control mx-auto w-auto" autocomplete="off" placeholder="Username*" size="30" name="username">
+    </div>
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" autocomplete="off" placeholder="Password*" size="30" name="password" type="password">
+    </div>
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" autocomplete="off" placeholder="Password Again*" size="30" name="confirmation" type="password">
+    </div>
+    <button class="btn btn-primary" type="submit">Register</button>
+</form>
+
+{% endblock%}

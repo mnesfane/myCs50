@@ -1,0 +1,92 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+.background
+{
+    height : 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+.quote_text
+{
+    display: block;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    height: 100px;
+    padding: 30px;
+}
+
+/* table{
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+} */
+
+/* *{
+    margin: 10;
+    padding: 0;
+}
+
+.table-box{
+    margin: 50px auto;
+} */
+
+/* .table-row{
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    background: white;
+    padding: 12px 0;
+    color: #555;
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
+} */
+/* .table-cell{
+    margin: 20px auto;
+    display: table-cell;
+    width: 30%;
+    text-align: center;
+    padding : 4px 0;
+    border-right: 1px solid #d6d4d4;
+    vertical-align: middle;
+} */
+
+table {
+    background-color: white;
+    /* border-spacing: 2px; */
+    width: 100%
+}
+table td{
+    /* border: 1px solid #ccc; */
+    padding: 30px;
+    /* border-right: 1px solid #d6d4d4; */
+}
+table th{
+    padding: 30px;
+    background-color: grey;
+}

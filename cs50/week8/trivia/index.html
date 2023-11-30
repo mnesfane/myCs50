@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function(){
+                let correct = document.querySelector("#b2011");
+                let incorrect = document.querySelectorAll(".incorrect");
+                let mess = document.querySelector("#message");
+
+
+                // console.log(incorrect.length);
+                correct.addEventListener('click',function(){
+                    correct.style.backgroundColor = "green";
+                    mess.innerHTML = 'correct';
+                });
+
+                for (let i = 0; i < incorrect.length; i++)
+                {
+                    incorrect[i].addEventListener('click', function(){
+                        incorrect[i].style.backgroundColor = "red";
+                        mess.innerHTML = 'incorrect';
+                    });
+                }
+                document.querySelector("#submit").addEventListener('click', function(){
+                    let ans = document.querySelector("input"); //.value
+                    let mess2 = document.querySelector("#mess2");
+                    // console.log(ans);
+                    if (ans.value == "v12")
+                    {
+                        ans.style.color = 'green';
+                        mess2.innerHTML = 'correct';
+                    }
+                    else
+                    {
+                        ans.style.color = 'red';
+                        mess2.innerHTML = 'incorrect';
+                    }
+                });
+            });
+
+            // document.addEventListener('DOMContentLoaded', function(){
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What is the release year of the lamborghini aventador?</h3>
+                <button id="b2011" type="click">2011</button>
+                <button class="incorrect">2015</button>
+                <button class="incorrect">2023</button>
+                <button class="incorrect">2009</button>
+                <button class="incorrect">2006</button>
+                <button class="incorrect">2010</button>
+                <p id="message"></p>
+                <!-- TODO: Add multiple choice question here -->
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>the engine in the lambo aventador?</h3>
+                    <!-- input bar -->
+                    <input type="text">
+                    <button id="submit">check answer</button>
+                    <p id="mess2"></p>
+            </div>
+        </div>
+    </body>
+</html>

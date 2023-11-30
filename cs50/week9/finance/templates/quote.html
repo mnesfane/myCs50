@@ -1,0 +1,15 @@
+{% extends "layout.html"%}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block quote %}
+<body class="background" style="background-image: url('https://img.freepik.com/premium-photo/business-stock-market-digital-data-financial-investment_24070-1624.jpg?w=2000');"></body>
+<form action="/quote"  method="post">
+    <div class="mb-3">
+        <input type="text" autofocus class="form-control mx-auto w-auto" autocomplete="off" placeholder="Symbol*" size="30" name="symbol">
+    </div>
+    <button class="btn btn-primary" type="submit">Find</button>
+</form>
+{% endblock%}

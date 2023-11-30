@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- http://getbootstrap.com/docs/5.1/ -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
+    <link href="/static/styles.css" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    <div class="pomotitle">
+        <img src="https://pomofocus.io/images/icon-white2.png" alt="logo">
+        <p>Pomodoro</p>
+    </div>
+    <p class="logintitle">Register</p>
+    <form action="/register" method="post">
+    <div class="registerblock">
+            <div class="username-container">
+                    <label style="color: #C4C4C4" ><strong>username</strong></label>
+                    <input name="username" type="text" autofocus autocomplete="off" placeholder="Name/Username*" required>
+                    <br>
+                    <label style="color: #C4C4C4" ><strong>password</strong></label>
+                    <input name="password" type="password" autocomplete="off" autofocus required>
+                    <br>
+                    <label style="color: #C4C4C4" ><strong>confirm</strong></label>
+                    <input name="confirm" type="password" autocomplete="off" autofocus required>
+                    <br>
+                    <button class="loginbutton" type="submit">Register</button>
+                    <!-- <p style="text-align: center; color: #C4C4C4; margin-top: 10px;">Do not have an account?</p> -->
+                    <a href="/" style="margin-top: 5px;">Home</a>
+                </div>
+            </div>
+        </form>
+</body>
+</html>
